@@ -12,7 +12,7 @@ import Navbar from './components/Navbar/Navbar';
 function App() {
   useEffect(() => {
     async function getData() {
-      const res = await axios.get("/v1/dogs")
+      const res = await axios.get("http://localhost:8080/v1/dogs")
       return res
     }
 
